@@ -113,7 +113,7 @@ function Hero3D() {
             <div className="flex flex-wrap gap-4 mt-10">
 
               <a
-                href="/resume.pdf"
+                href="../assets/resume.pdf"
                 download
                 className="
                   bg-indigo-600
