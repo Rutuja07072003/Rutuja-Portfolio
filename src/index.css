@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================
+   GLOBAL RESET
+========================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  color: white;
+  overflow-x: hidden;
+
+  /* Premium dark cinematic background */
+  background: radial-gradient(circle at top right, #0f172a, #020617);
+}
+
+/* =========================
+   SECTION LAYOUT
+========================= */
+
+.section {
+  padding: 140px 8%;
+}
+
+/* =========================
+   GLASS CARD (UNIFIED)
+========================= */
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+}
+
+.glass:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 40px rgba(34, 211, 238, 0.15);
+}
+
+/* =========================
+   TEXT SELECTION
+========================= */
+
+::selection {
+  background: #06b6d4;
+  color: white;
+}
+
+/* =========================
+   BACKGROUND GLOW ORBS
+========================= */
+
+body::before {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: rgba(34, 211, 238, 0.12);
+  border-radius: 50%;
+  filter: blur(140px);
+  top: -120px;
+  right: -150px;
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 450px;
+  height: 450px;
+  background: rgba(99, 102, 241, 0.12);
+  border-radius: 50%;
+  filter: blur(140px);
+  bottom: -120px;
+  left: -150px;
+  z-index: -1;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+h1 {
+  letter-spacing: -2px;
+}
+
+/* =========================
+   OPTIONAL: SMOOTH IMAGE RENDER
+========================= */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button, a {
+  transition: transform 0.2s ease;
+}
+
+button:hover, a:hover {
+  transform: scale(1.05);
+}
