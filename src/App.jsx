@@ -6,7 +6,6 @@ import Projects from "./components/Projects";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import ParticlesBackground from "./components/ParticlesBackground";
 import Stats from "./components/Stats";
 import CursorGlow from "./components/CursorGlow";
 import ClickRipple from "./components/ClickRipple";
@@ -16,7 +15,7 @@ function App() {
     <>
       <CursorGlow />
       <ClickRipple />
-      <ParticlesBackground />
+      
 
       <Navbar />
 
